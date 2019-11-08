@@ -5,9 +5,15 @@
  align-items: @align;
 }
 
-.sbtn (@width, @height, @bg, @color){
+.sbtn (@bg-color, @fcolor, @f-size){
+ background: @bg-color;
+ color: @fcolor;
+ font-size: @f-size;
+ 
+}
+
+.btn-size(@width, @height, @btnradius){
  width: @width;
  height: @height;
- background-color: @bg;
- color: @color;
+ border-radius: @btnradius;
 }

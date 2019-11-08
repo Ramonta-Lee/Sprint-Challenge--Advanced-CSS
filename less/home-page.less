@@ -11,6 +11,7 @@
     }
 
     p {
+      font-size: @font-s;
       padding:0 15px;
       color: @shuttle-gray;
 
@@ -43,6 +44,7 @@
     }
 
     p {
+      font-size: @font-s;
       color: @shuttle-gray;
       margin-top: 13px;
     }
@@ -56,7 +58,7 @@
     justify-content: center;
 
     .walk-text {
-      border: 1px solid red;
+
       width: 50%;
 
       h3 {
@@ -65,17 +67,22 @@
       }
 
       p {
+        font-size: @font-s; 
         margin-bottom: 26px;
         color: @shuttle-gray;
       }
 
       .btn {
-        border: 1px solid red;
-        width: 100px;
-        height: 100px;
-        .sbtn(100%;)
+        .btn-size(100px, 40px, 5px);
+        .fbox(center, center);
+        .sbtn(#22283A, @porcelain, 2rem);
+        &:hover {
+          .sbtn(@porcelain, #22283A, 2rem);
+        }
       }
     }
+  
+    
 
     .walk-img {
       width: 46%;
