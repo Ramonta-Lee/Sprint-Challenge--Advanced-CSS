@@ -1,1 +1,19 @@
 // Mixins Here
+.fbox(@justify, @align){
+ display: flex;
+ justify-content: @justify;
+ align-items: @align;
+}
+
+.sbtn (@bg-color, @fcolor, @f-size){
+ background: @bg-color;
+ color: @fcolor;
+ font-size: @f-size;
+ 
+}
+
+.btn-size(@width, @height, @btnradius){
+ width: @width;
+ height: @height;
+ border-radius: @btnradius;
+}

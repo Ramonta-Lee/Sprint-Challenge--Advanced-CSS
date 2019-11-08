@@ -1,1 +1,57 @@
 // Navigation code here
+.opening-container {
+  width: 100%;
+  height: 100px;
+  background: @sea-shell;
+  .fbox(center, center);
+    @media @phone {
+      width: 100%;
+      .fbox(center, center);
+    }
+}
+
+.title-navigation-container {
+  width: 40%;
+  @media @phone {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    .fbox(center, center);
+
+  } 
+  .fbox(center, center);
+  flex-direction: column;
+    .title {
+      @media @phone {
+        width: 90%;
+        margin-bottom: 2%;
+        .fbox(center, center);
+      }
+      width: 100%;
+      margin-bottom: 2%;
+      font-size: 4rem;
+      height: 100%;
+      .fbox(center, center);
+      color: @ebony-clay;
+  }
+  nav {
+    @media @phone {
+      width: 90%;
+      .fbox(center, center);
+      justify-content: space-evenly;
+      margin: 0 auto;
+    }
+    
+    border-color: @sea-shell;
+    background: @wild-sand;
+    width: 100%;
+    .fbox(center, center);
+    justify-content: space-evenly;
+    margin: 0 auto;
+    a {
+      color: @river-bend;
+      font-size: 1.8rem;
+      text-decoration: none;
+    }
+  }
+}
