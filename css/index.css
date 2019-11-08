@@ -168,12 +168,31 @@ p {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .opening-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+  }
+}
 .title-navigation-container {
-  width: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+@media (max-width: 500px) {
+  .title-navigation-container {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .title-navigation-container .title {
   width: 100%;
@@ -185,6 +204,17 @@ p {
   align-items: center;
   color: #23293B;
 }
+@media (max-width: 500px) {
+  .title-navigation-container .title {
+    font-size: 2rem;
+    border: 1px solid red;
+    width: 90%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .title-navigation-container nav {
   border-color: #F1F1F1;
   background: #F6F6F6;
@@ -195,10 +225,27 @@ p {
   justify-content: space-evenly;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .title-navigation-container nav {
+    width: 90%;
+    border: 1px solid orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+  }
+}
 .title-navigation-container nav a {
   color: #454A59;
   font-size: 1.8rem;
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  .title-navigation-container nav a {
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
 }
 footer {
   color: #22283B;
@@ -213,6 +260,14 @@ footer {
 .home {
   border-color: #dee2e6;
 }
+@media (max-width: 500px) {
+  .home .intro {
+    border: 1px solid blue;
+    width: 100%;
+    margin-right: 20%;
+    margin: 0 auto;
+  }
+}
 .home .intro h2 {
   padding: 15px;
   color: #23293B;
@@ -224,6 +279,11 @@ footer {
 }
 .home .intro img {
   border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 100%;
+  }
 }
 .home .space-images {
   display: flex;
