@@ -34,13 +34,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+The difference between an adaptive website and a fully responsive website is the way in which they are responsive. Fully responsive websites respond to the size of the browser at any given point. No matter what the browser width may be, the site adjusts its layout in a way that is optimized to the screen. Adaptive websites respond  to different browser sizes by changing at a specific point. The site is only concerend about the browser being a specific width, at which point it adapts the layout.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+ The mobile-first approach involves designing a desktop site starting with the mobile version, which is  then adatped to larger screens. You are building your website with your mobile users in mind. As you set break points you call the min-width media query that tells the site if the device width is greater than or equal to a set number(px), then do this (...).
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Setting the font-size to 62.5% in the html tag essentially tells us that we now have a base font-size unit of 10px. Rem units are root responsive units which adjust based off the size of the root instead of just off the parent element. So, if the root is 62.5% (10px) and I want a font to be 20px I would set the font-size to: 2rem. This font will be responsive to the width of the screen. It means 20px because I have a combined total of: 10+10=20px; (2rem).
+
 4. How would you describe preprocessing to someone new to CSS?
 
+ Preprocessing gives us more options for how we use and build our CSS. It does this through the use of a different language with a more robust syntax. That language is then compiled into normal CSS. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing has to be the way it uses variables. I imagine having all of these different places where a simple color, or font, or one little thing needs to be changed and having the ability to just go to one place in your code, make the change, and have it reflect is amazing. 
+
+The concept that gives me the most trouble is still the mixins when it comes to using them on preset box-sizing, orientation, etc. I'm sure it's just because of my limited experience, but I have yet to have the ability to think ahead on how all my boxes are going to be shaped and what they do and how they'll move within the page prior to even laying down a header and some paragraphs, and images and everything that will go in them. I always feel like I'm tweeking something in everycontainer to make it work.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
